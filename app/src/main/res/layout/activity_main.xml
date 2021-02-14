@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/etid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtId"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Enter Id"
+        android:inputType="text"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="82dp"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtId" />
+
+    <EditText
+        android:id="@+id/txtAddress"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="21dp"
+        android:ems="10"
+        android:hint="Enter Address"
+        android:inputType="textPersonName"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtPhone"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="96dp"
+        android:ems="10"
+        android:hint="Enter Phone"
+        android:inputType="textPersonName"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtAddress" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="117dp"
+        android:ems="10"
+        android:hint="Enter Email"
+        android:inputType="textPersonName"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnInsert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAddress" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Insert"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnDlt"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnDlt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="166dp"
+        android:text="Delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnUpdate" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:text="Update"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnDlt"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
